@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Abinadab dos Santos</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            background: #eef2f7;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+
+        .card {
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #0d6efd;
+            padding: 3px;
+            background: #fff;
+        }
+
+        .section-title {
+            font-weight: 800;
+            color: #0d6efd;
+        }
+
+        .small-text {
+            font-size: .92rem;
+            line-height: 1.6;
+        }
+
+        .badge {
+            border-radius: 8px;
+            padding: 6px 10px;
+        }
+
+        .btn {
+            border-radius: 30px;
+        }
+
+        .accordion-button {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold text-info" href="#">
+                Abinadab dos Santos
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portifolio.html">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-4">
+
+                <div class="card text-center p-4">
+
+                    <img src="./foto.jpg" class="profile-img mx-auto mb-3" alt="Foto">
+
+                    <h4 class="fw-bold mb-1">Abinadab dos Santos</h4>
+
+                    <p class="text-primary fw-semibold mb-3">
+                        Desenvolvedor Front-End
+                    </p>
+
+                    <p class="text-muted small-text">
+                        Estudante de Desenvolvimento de Sistemas, focado em desenvolvimento web front-end.
+                        Estou em constante aprendizado com HTML, CSS, JavaScript e Bootstrap, criando projetos
+                        acadêmicos e pessoais para evoluir minhas habilidades e conquistar minha primeira
+                        oportunidade na área de tecnologia.
+                    </p>
+
+                    <a href="https://wa.me/5514991584248?text=Olá%20vim%20pelo%20seu%20portfólio" target="_blank"
+                        class="btn btn-primary w-100 mt-2">
+                        Entrar em Contato
+                    </a>
+
+                    <hr>
+
+                    <p class="small mb-1">
+                        <i class="bi bi-envelope-fill text-primary"></i>
+                        santosabinadab234@email.com
+                    </p>
+
+                    <p class="small">
+                        <i class="bi bi-github"></i>
+                        github.com/abinadab
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CONTEÚDO PRINCIPAL -->
+            <div class="col-lg-8">
+
+                <div class="card p-4">
+
+                    <h4 class="section-title mb-4">
+                        Informações Profissionais
+                    </h4>
+
+                    <div class="accordion" id="info">
+
+                        <!-- PESSOAL -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#pessoal">
+                                    Informações Pessoais
+                                </button>
+                            </h2>
+
+                            <div id="pessoal" class="accordion-collapse collapse show" data-bs-parent="#info">
+
+                                <div class="accordion-body">
+
+                                    <p><strong>Nome:</strong> Abinadab dos Santos</p>
+                                    <p><strong>E-mail:</strong> santosabinadab234@email.com</p>
+                                    <p><strong>Localização:</strong> Brasil</p>
+                                    <p><strong>Profissão:</strong> Desenvolvedor Front-End (em formação)</p>
+
+                                    <p>
+                                        <strong>Objetivo:</strong>
+                                        Atuar na área de desenvolvimento web, buscando minha primeira oportunidade
+                                        profissional para aplicar meus conhecimentos e evoluir na carreira de
+                                        tecnologia.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- EXPERIÊNCIA -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#exp">
+                                    Experiência Profissional
+                                </button>
+                            </h2>
+
+                            <div id="exp" class="accordion-collapse collapse" data-bs-parent="#info">
+
+                                <div class="accordion-body">
+
+                                    <h6 class="fw-bold">
+                                        Em busca da primeira oportunidade na área de tecnologia
+                                    </h6>
+
+                                    <p class="text-muted">
+                                        Desenvolvedor Front-End em formação
+                                    </p>
+
+                                    <p>
+                                        Atualmente não possuo experiência profissional formal na área, porém estou em
+                                        constante desenvolvimento
+                                        através do curso Técnico em Desenvolvimento de Sistemas.
+                                    </p>
+
+                                    <p>
+                                        Durante minha formação, venho adquirindo conhecimento prático em desenvolvimento
+                                        web com HTML, CSS,
+                                        JavaScript e Bootstrap, aplicando esses conhecimentos na criação de projetos
+                                        acadêmicos e pessoais.
+                                    </p>
+
+                                    <p>
+                                        Esses projetos têm como objetivo aprimorar minhas habilidades técnicas, lógica
+                                        de programação e boas
+                                        práticas de desenvolvimento, além de construir um portfólio sólido para minha
+                                        primeira oportunidade na
+                                        área de tecnologia.
+                                    </p>
+
+                                    <p class="text-primary fw-semibold">
+                                        Estou motivado a aprender, evoluir profissionalmente e contribuir com equipes de
+                                        desenvolvimento.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- HABILIDADES -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#hab">
+                                    Habilidades
+                                </button>
+                            </h2>
+
+                            <div id="hab" class="accordion-collapse collapse" data-bs-parent="#info">
+
+                                <div class="accordion-body">
+
+                                    <h6 class="text-primary fw-bold">Hard Skills</h6>
+
+                                    <span class="badge bg-primary">HTML</span>
+                                    <span class="badge bg-secondary">CSS</span>
+                                    <span class="badge bg-warning text-dark">JavaScript</span>
+                                    <span class="badge bg-success">Bootstrap</span>
+
+                                    <hr>
+
+                                    <h6 class="text-success fw-bold">Soft Skills</h6>
+
+                                    <span class="badge bg-dark">Trabalho em equipe</span>
+                                    <span class="badge bg-dark">Comunicação</span>
+                                    <span class="badge bg-dark">Organização</span>
+                                    <span class="badge bg-dark">Proatividade</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- CERTIFICAÇÕES -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#certificacoes">
+                                    Certificações
+                                </button>
+                            </h2>
+
+                            <div id="certificacoes" class="accordion-collapse collapse" data-bs-parent="#info">
+
+                                <div class="accordion-body">
+
+                                    <h6 class="text-primary fw-bold">
+                                        Certificações
+                                    </h6>
+
+                                    <hr>
+
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">SENAI</h6>
+                                        <p class="text-muted mb-0">
+                                            Competência Transversal em Segurança no Trabalho, com foco em boas práticas
+                                            de prevenção de acidentes e segurança no ambiente profissional.
+                                        </p>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">SENAI</h6>
+                                        <p class="text-muted mb-0">
+                                            Fluência em Fundamentos da Inteligência Artificial, abordando conceitos
+                                            básicos e aplicações introdutórias de IA.
+                                        </p>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">SENAI</h6>
+                                        <p class="text-muted mb-0">
+                                            Introdução à Segurança Cibernética, com noções sobre proteção de dados,
+                                            riscos digitais e boas práticas de segurança online.
+                                        </p>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="mb-3">
+                                        <h6 class="fw-bold">SENAI</h6>
+                                        <p class="text-muted mb-0">
+                                            Ética na Inteligência Artificial, explorando princípios éticos,
+                                            responsabilidade e impacto social do uso de tecnologias de IA.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+
+            <h6 class="fw-bold">Abinadab dos Santos</h6>
+
+            <p class="text-secondary small">
+                Desenvolvedor Front-End em formação
+            </p>
+
+            <p class="small mb-0 text-secondary">
+                © 2026 - Todos os direitos reservados
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
